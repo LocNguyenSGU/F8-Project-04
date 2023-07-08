@@ -76,7 +76,10 @@
         />
         <link rel="manifest" href="./assets/favicon/manifest.json" />
         <meta name="msapplication-TileColor" content="#ffffff" />
-        <meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png" />
+        <meta
+            name="msapplication-TileImage"
+            content="./assets/favicon/ms-icon-144x144.png"
+        />
         <meta name="theme-color" content="#ffffff" />
         <!-- Reset CSS -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
@@ -92,12 +95,102 @@
         />
     </head>
     <body>
-        <h1>jdsafa</h1>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-            molestiae nesciunt voluptate asperiores numquam eligendi repellendus
-            quidem illum, ducimus impedit exercitationem assumenda distinctio
-            maiores obcaecati ad voluptatum atque excepturi molestias?
-        </p>
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <img src="./assets/img/logo.svg" alt="" class="logo" />
+                    <!-- navbar -->
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#!" class="nav__link">Home</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#!" class="nav__link">About</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#!" class="nav__link"
+                                    >Services & Rates</a
+                                >
+                            </li>
+                            <li class="nav__item">
+                                <a href="#!" class="nav__link">Reviews</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#!" class="nav__link">Contacts us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header-action">
+                    <a href="#!" class="header-action__link">Sign in</a>
+                    <a href="#!" class="header-action__btn btn">Sign up</a>
+                </div>
+            </div>
+        </header>
+        <!-- Main -->
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <!-- Media -->
+                    <div class="hero__media">
+                        <div class="hero__img-wrap">
+                            <img
+                                src="./assets/img/hero-img-wrap-1.png"
+                                alt=""
+                                class="hero__img-1"
+                            />
+                            <!-- decoration -->
+                            <img
+                                src="./assets/img/hero-decor-1.png"
+                                alt=""
+                                class="hero-decor-1"
+                            />
+                            <img
+                                src="./assets/img/hero-decor-2.png"
+                                alt=""
+                                class="hero-decor-2"
+                            />
+                            <!-- img-wrap -->
+                            <img
+                                src="./assets/img/hero-img-wrap-2.png"
+                                alt=""
+                                class="hero__img-2"
+                            />
+                            <img
+                                src="./assets/img/hero-img-wrap-small.png"
+                                alt=""
+                                class="hero__img-wrap-small"
+                            />
+                        </div>
+                    </div>
+                    <!-- Content -->
+                    <section class="hero__content">
+                        <h1 class="title-heading">
+                            Established & Trusted Pet Care Service
+                        </h1>
+                        <p class="hero__content-desc desc">
+                            Discover a wide variety of Pawsitive services to
+                            choose from, including daycare, private walks,
+                            office duty and spa.
+                        </p>
+                        <div class="hero__content-row">
+                            <a href="#!" class="hero__content-btn btn"
+                                >Book a Meet</a
+                            >
+                            <img
+                                src="./assets/img/hero-content-icon-row.svg"
+                                alt=""
+                                class="hero__content-icon"
+                            />
+                            <a href="#!" class="hero__content-link"
+                                >Schedule a Call</a
+                            >
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </main>
     </body>
 </html>
