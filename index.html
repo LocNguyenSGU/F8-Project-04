@@ -95,11 +95,26 @@
         />
     </head>
     <body>
-        <!-- Header -->
+        <!-- Header PC-->
         <header class="header">
             <div class="container">
                 <div class="header__inner">
-                    <a href="#"><img src="./assets/img/logo.svg" alt="" class="logo" /></a>
+                    <label for="menu-checkbox" class="toggle-menu hide-on-pc">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="1em"
+                            viewBox="0 0 448 512"
+                        >
+                            <path
+                                fill="currentColor"
+                                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                            />
+                        </svg>
+                    </label>
+                    <!-- logo -->
+                    <a href="#">
+                        <img src="./assets/img/logo.svg" alt="" class="logo" />
+                    </a>
                     <!-- navbar -->
                     <nav class="nav">
                         <ul class="nav__list">
@@ -122,18 +137,63 @@
                             </li>
                         </ul>
                     </nav>
+                    <!-- action -->
+                    <div class="header-action hide-on-mb">
+                        <a href="#!" class="header-action__link">Sign in</a>
+                        <a href="#!" class="header-action__btn btn">Sign up</a>
+                    </div>
                 </div>
-                <div class="header-action">
-                    <a href="#!" class="header-action__link">Sign in</a>
-                    <a href="#!" class="header-action__btn btn">Sign up</a>
-                </div>
+            </div>
+        </header>
+        <!-- Header Tablet/Mobile -->
+        <header class="mobile-header hide-on-pc">
+            <input
+                type="checkbox"
+                name=""
+                id="menu-checkbox"
+                class="menu-checkbox"
+                hidden
+            />
+            <!-- Overlay -->
+            <label for="menu-checkbox" class="menu-overlay"></label>
+            <div class="menu-drawer">
+                <!-- logo -->
+                <a href="#">
+                    <img src="./assets/img/logo.svg" alt="" class="logo" />
+                </a>
+                <!-- navbar -->
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#!" class="nav__link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#!" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#!" class="nav__link">Services & Rates</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#!" class="nav__link">Reviews</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#!" class="nav__link">Contacts us</a>
+                        </li>
+                        <li class="nav__item hide-on-pc-tab">
+                            <a href="#!" class="nav__sign-in nav__link ">Sign in</a>
+                        </li>
+                        <li class="nav__item hide-on-pc-tab">
+                            <a href="#!" class="nav__sign-up nav__link">Sign up</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </header>
         <!-- Hero -->
         <section class="hero">
             <div class="container">
                 <!-- Media -->
-                <div class="hero__media">
+                <div class="hero__media hide-on-mb">
                     <div class="hero__img-wrap">
                         <img
                             src="./assets/img/hero-img-wrap-1.png"
@@ -250,7 +310,7 @@
                                 Every dog has its own private, spacious room and
                                 daily individual time in our large play yard.
                             </p>
-                            <div class="list-row">
+                            <div class="list-row hide-on-mb">
                                 <div class="row">
                                     <img
                                         src="./assets/img/about-content-icon-1.svg"
@@ -276,7 +336,7 @@
                                     <p class="sub-icon">Pet Transport</p>
                                 </div>
                             </div>
-                            <div class="block-separate">
+                            <div class="block-separate hide-on-mb">
                                 <div class="separate"></div>
                                 <div class="sub-separate"></div>
                             </div>
@@ -284,7 +344,10 @@
                                 While you're on holiday, here's where your furry
                                 friends will spend their time.
                             </p>
-                            <a href="#!" class="link">View more</a>
+                            <a href="#!" class="link hide-on-tablet-mb"
+                                >View more</a
+                            >
+                            <a href="#!" class="btn hide-on-pc">View more</a>
                         </section>
                     </div>
                 </div>
@@ -348,7 +411,7 @@
                                 </div>
                             </article>
                         </div>
-                        <div class="column">
+                        <div class="column hide-on-tablet-mb">
                             <img
                                 src="./assets/img/service-img-main.png"
                                 alt=""
@@ -593,7 +656,9 @@
                                 Stay up to date with the latest tech trands and
                                 news in the pets.
                             </p>
-                            <a href="#!" class="btn">View All Blog</a>
+                            <a href="#!" class="btn hide-on-tablet-mb"
+                                >View All Blog</a
+                            >
                         </div>
                     </div>
                     <div class="list-blog">
@@ -647,6 +712,7 @@
                             </p>
                         </div>
                     </div>
+                    <a href="#!" class="btn hide-on-pc">View All Blog</a>
                 </div>
             </section>
         </main>
